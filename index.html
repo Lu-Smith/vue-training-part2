@@ -20,10 +20,12 @@
         <hr />
         <br />
         <div v-if="showBooks">
-            <p>{{ books[0].title }} - {{books[0].author}}</p>
-            <p>{{ books[1].title }} - {{books[1].author}}</p>
-            <p>{{ books[2].title }} - {{books[2].author}}</p>
-            <p>{{ books[3].title }} - {{books[3].author}}</p>
+            <ul>
+                <li v-for="book in books">
+                    <h3>{{book.title}}</h3>
+                    <p>{{book.author}}</p>
+                </li>
+            </ul>
         </div>
         <button @click="toggleShowBooks">
             <span v-if="showBooks">Hide Books</span>
