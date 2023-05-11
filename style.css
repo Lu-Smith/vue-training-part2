@@ -60,3 +60,8 @@ li:nth-child(even) {
     margin: 20px;
     display: inline-block;
 }
+
+.fav {
+    border-radius: 40px;
+    border: 10px red solid;
+}
