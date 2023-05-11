@@ -46,6 +46,11 @@ methods: {
     toggleFav(book) {
         book.isFav = !book.isFav
     }
+},
+computed: {
+filterBooks(){
+    return this.books.filter((book) => book.isFav )
+}
 }
 })
 app.mount('#app')
