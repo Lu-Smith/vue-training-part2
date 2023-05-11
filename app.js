@@ -13,7 +13,7 @@ methods: {
     changeTitle(title) {
         this.title = title
     },
-    toogleShowBooks() {
+    toggleShowBooks() {
         this.showBooks = !this.showBooks
     }
 

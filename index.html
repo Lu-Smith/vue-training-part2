@@ -10,17 +10,18 @@
 <body>
    <h1>Hello World</h1> 
    <div id="app">
-    <h2> I am here</h2>
-    <div v-if="showBooks">
-        <p>{{ title }} - {{author}} - {{age}}</p>
-    </div>
-    <button @click="toogleShowBooks">
-        <span v-if="showBooks">Hide Books</span>
-        <span v-if="!showBooks">Show Books</span>
-    </button>
-    <button @click="age++">Increase age</button>
-    <button @click="age--">Decrease age</button>
-    <div @click="changeTitle('Oath')">Change book title</div>
+        <h2> I am here</h2>
+        <div v-if="showBooks">
+            <p>{{ title }} - {{author}} - {{age}}</p>
+        </div>
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+        </button>
+        <button @click="age++">Increase age</button>
+        <button @click="age--">Decrease age</button>
+        <div @click="changeTitle('Oath')">Change book title</div>
+        <div v-show="showBooks">Currently showing books</div>
    </div>
    <script src="app.js"></script>
 </body>
