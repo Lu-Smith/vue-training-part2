@@ -11,18 +11,25 @@
 <body>
    <h1>Hello World</h1> 
    <div id="app">
-        <h2> I am here</h2>
+        <h2> Vue training</h2>
+        <p>{{age}}</p>
+        <button @click="age++">Increase age</button>
+        <button @click="age--">Decrease age</button>
+        <br />
+        <br />
+        <hr />
+        <br />
         <div v-if="showBooks">
-            <p>{{ title }} - {{author}} - {{age}}</p>
+            <p>{{ title }} - {{author}}</p>
         </div>
         <button @click="toggleShowBooks">
             <span v-if="showBooks">Hide Books</span>
             <span v-else>Show Books</span>
         </button>
-        <button @click="age++">Increase age</button>
-        <button @click="age--">Decrease age</button>
         <div @click="changeTitle('Oath')">Change book title</div>
         <div v-show="showBooks" class="show">Currently showing books</div>
+        <br />
+        <hr />
         <br />
         <div>
             <div class="box" @mouseover="handleEvent($event, 5)">mouseover (enter)</div>
