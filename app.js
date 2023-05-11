@@ -4,6 +4,7 @@ const app = Vue.createApp({
 data() {
     return {
         showBooks: true,
+        url: 'https://www.lunasmithart.com/',
         books: [
             {title: 'The final empire',  author: 'Max Wood'},
             {title: 'Music',  author: 'Luna Smith'},
