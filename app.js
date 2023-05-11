@@ -7,6 +7,11 @@ data() {
         author: 'Luna Smith',
         age: 35
     }
+},
+methods: {
+    changeTitle() {
+        this.title = "Words"
+    }
 }
 })
 app.mount('#app')
