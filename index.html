@@ -23,6 +23,13 @@
         <button @click="age--">Decrease age</button>
         <div @click="changeTitle('Oath')">Change book title</div>
         <div v-show="showBooks" class="show">Currently showing books</div>
+        <br />
+        <div>
+            <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
+            <div class="box"@mouseleave="handleEvent">mouseleave</div>
+            <div class="box"@dblclick="handleEvent">double click</div>
+            <div class="box"></div>
+        </div>
    </div>
    <script src="app.js"></script>
 </body>

@@ -15,6 +15,9 @@ methods: {
     },
     toggleShowBooks() {
         this.showBooks = !this.showBooks
+    },
+    handleEvent() {
+        console.log('event')
     }
 
 }
