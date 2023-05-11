@@ -4,8 +4,12 @@ const app = Vue.createApp({
 data() {
     return {
         showBooks: true,
-        title: 'The final empire',
-        author: 'Luna Smith',
+        books: [
+            {title: 'The final empire',  author: 'Max Wood'},
+            {title: 'Music',  author: 'Luna Smith'},
+            {title: 'The Last War',  author: 'Robin Maxwell'},
+            {title: 'You are my puppy',  author: 'Lucy Darwing'},
+        ],
         age: 35,
         x: 0,
         y: 0,
@@ -14,7 +18,7 @@ data() {
 },
 methods: {
     changeTitle(title) {
-        this.title = title
+        this.books[0].title = title
     },
     toggleShowBooks() {
         this.showBooks = !this.showBooks
