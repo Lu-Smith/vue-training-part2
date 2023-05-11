@@ -25,7 +25,7 @@
         <div v-show="showBooks" class="show">Currently showing books</div>
         <br />
         <div>
-            <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
+            <div class="box" @mouseover="handleEvent($event, 5)">mouseover (enter)</div>
             <div class="box"@mouseleave="handleEvent">mouseleave</div>
             <div class="box"@dblclick="handleEvent">double click</div>
             <div class="box"></div>
