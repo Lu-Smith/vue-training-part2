@@ -12,9 +12,9 @@
    <div id="app">
     <h2> I am here</h2>
     <p>{{ title }} - {{author}} - {{age}}</p>
-    <button v-on:click="age++">Increase age</button>
-    <button v-on:click="age--">Decrease age</button>
-    <div v-on:click="title = 'something else'">Change book title</div>
+    <button @click="age++">Increase age</button>
+    <button @click="age--">Decrease age</button>
+    <div @click="title = 'something else'">Change book title</div>
    </div>
    <script src="app.js"></script>
 </body>
