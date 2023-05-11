@@ -42,6 +42,9 @@ methods: {
         } else {
             this.color = 'red'
         }
+    },
+    toggleFav(book) {
+        book.isFav = !book.isFav
     }
 }
 })
