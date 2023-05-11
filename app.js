@@ -8,7 +8,8 @@ data() {
         author: 'Luna Smith',
         age: 35,
         x: 0,
-        y: 0
+        y: 0,
+        color: ''
     }
 },
 methods: {
@@ -25,11 +26,18 @@ methods: {
         }
     },
     handleMouseMove(e) {
-this.x= e.offsetX
-this.y = e.offsetY
+        this.x= e.offsetX
+        this.y = e.offsetY
+        if(e.offsetX > 200 && e.offsetY > 100) {
+            this.color = 'blue'
+        } else if(e.offsetX > 200 && e.offsetY < 100) {
+            this.color = 'green'
+        } else if(e.offsetX < 200 && e.offsetY < 100) {
+            this.color = 'yellow'
+        } else {
+            this.color = 'red'
+        }
     }
-
-
 }
 })
 app.mount('#app')
